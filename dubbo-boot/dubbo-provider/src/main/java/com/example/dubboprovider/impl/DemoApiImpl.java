@@ -1,10 +1,10 @@
 package com.example.dubboprovider.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.example.dubboapi.manager.DemoApi;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Service;
 
 @Service
 public class DemoApiImpl implements DemoApi {

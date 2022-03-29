@@ -3,32 +3,32 @@ server:
 
 dubbo:
   application:
-    # Õâ¸ö name ×÷ÎªÌá¹©ÕßÕ¹Ê¾£¨ÔÚ dubbo-admin ¿ÉÊÓ»¯½çÃæ¿´µ½µÄÌá¹©ÕßÃû³Æ¾ÍÊÇÕâ¸ö£©
+    # è¿™ä¸ª name ä½œä¸ºæä¾›è€…å±•ç¤ºï¼ˆåœ¨ dubbo-admin å¯è§†åŒ–ç•Œé¢çœ‹åˆ°çš„æä¾›è€…åç§°å°±æ˜¯è¿™ä¸ªï¼‰
     name: dubbo-springboot-provider
-  # Ó¦ÓÃËùÊôÕß
+  # åº”ç”¨æ‰€å±è€…
   owner: Jessy Heung
-  # Ó¦ÓÃËùÊô×éÖ¯
+  # åº”ç”¨æ‰€å±ç»„ç»‡
   organization: Jessy Heung
   registry:
     id: zookeeper-registry
-    # ×¢²áÖĞĞÄĞ­Òé
+    # æ³¨å†Œä¸­å¿ƒåè®®
     protocol: zookeeper
-    # ×¢²áÖĞĞÄµØÖ· ´Ë´¦²ÉÓÃ±¾µØ zk ×¢²á£¬·şÎñÆ÷µÄ»°Ğ´¶ÔÓ¦ ip µØÖ·
+    # æ³¨å†Œä¸­å¿ƒåœ°å€ æ­¤å¤„é‡‡ç”¨æœ¬åœ° zk æ³¨å†Œï¼ŒæœåŠ¡å™¨çš„è¯å†™å¯¹åº” ip åœ°å€
     address: zookeeper://127.0.0.1:2181
 
-  # dubboĞ­ÒéÔÚ20880¶Ë¿Ú±©Â¶·şÎñ
-  # Ğ­ÒéÃû³Æ
+  # dubboåè®®åœ¨20880ç«¯å£æš´éœ²æœåŠ¡
+  # åè®®åç§°
   protocol:
     name: dubbo
-    # Ğ­Òé¶Ë¿Ú
-    port: 20880
-    # Ğ­Òé·ÃÎÊlog
+    # åè®®ç«¯å£
+    port: 20881
+    # åè®®è®¿é—®log
     accesslog: dubbo-access.log
-  # ÖØÊÔ´ÎÊı
+  # é‡è¯•æ¬¡æ•°
   provider:
     retries: 0
-    # ³¬Ê±Ê±¼ä
+    # è¶…æ—¶æ—¶é—´
     timeout: 3000
-  # ×¢²á¼à¿ØÖĞĞÄ
+  # æ³¨å†Œç›‘æ§ä¸­å¿ƒ
   monitor:
     protocol: registry

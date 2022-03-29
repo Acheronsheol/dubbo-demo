@@ -1,7 +1,7 @@
 package com.example.dubboconsumer.manager;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.example.dubboapi.manager.DemoApi;
-import jdk.nashorn.internal.ir.annotations.Reference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
